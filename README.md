@@ -8,6 +8,6 @@ This is a tensorflow implementation of a conditional style transfer network whic
 ![image](https://github.com/zhangcliff/style-transfer-of-arbitrary-region/blob/master/example/example1.png)
 
 ## Usage
-'''python
+```shell
 python stylize_image.py --content <> --mask <> --model-path <> --output-path <>
-'''
+```
