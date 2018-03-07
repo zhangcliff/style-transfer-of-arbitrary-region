@@ -8,7 +8,7 @@ This is a tensorflow implementation of a conditional style transfer network whic
 ![image](https://github.com/zhangcliff/style-transfer-of-arbitrary-region/blob/master/example/example1.png)
 
 ## Usage
-You can download all trained models from here [Baidu Yun](https://pan.baidu.com/disk/home?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0&traceid=#list/vmode=list&path=%2Farbitrary%20region%20style%20transfer%20models)
+You can download all trained models from here [Baidu Yun](https://pan.baidu.com/s/16YkBPWW_9jQj8-Qa4zedsQ)
 ```shell
 python stylize_image.py --content <content image> --mask <mask image> --model-path <model-path> --output-path <output image path>
 ```
