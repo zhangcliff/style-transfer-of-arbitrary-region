@@ -25,5 +25,5 @@ python train_network.py --style <style_image> --train-path <the content image fo
 ```
 ```shell
 python train_network.py --style style/style1.jpg --train-path train2014 --save-path logfile --vgg-path imagenet-vgg-verydeep-19.mat
-'''
+```
 
