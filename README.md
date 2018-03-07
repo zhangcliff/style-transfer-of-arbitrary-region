@@ -32,7 +32,13 @@ python train_network.py --style style/style1.jpg --train-path train2014 --save-p
 ![image](https://github.com/zhangcliff/style-transfer-of-arbitrary-region/blob/master/example/stylized_image.png)
 
 When look at the above results,we will find that there are some defect at the edge of the stylized picture.Therefore we can combine the origin content image with the stylized picture to generate more beautiful one. You can run 
-
+```shell
+python final_generate.py --content <content image> --mask <mask image> --stylized <generate image> --output-path <output image save path>
+```
+for example :
+```shell
+python final_generate.py --content car.jpg --mask mask_car.jpg --stylized stylize_car.jpg --output-path final_car.jpg
+```
 The finnal results are as follow:
 ![image](https://github.com/zhangcliff/style-transfer-of-arbitrary-region/blob/master/example/final_image.png)
 
