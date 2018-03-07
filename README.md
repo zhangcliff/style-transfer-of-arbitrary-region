@@ -23,7 +23,11 @@ Then you can train a new model as
 ```shell
 python train_network.py --style <style_image> --train-path <the content image folder> --save-path <the save path> --vgg-path <the pretrained vgg19 model>
 ```
+for example
 ```shell
 python train_network.py --style style/style1.jpg --train-path train2014 --save-path logfile --vgg-path imagenet-vgg-verydeep-19.mat
 ```
+
+## Sample results
+
 
