@@ -9,5 +9,5 @@ This is a tensorflow implementation of a conditional style transfer network whic
 
 ## Usage
 ```shell
-python stylize_image.py --content <> --mask <> --model-path <> --output-path <>
+python stylize_image.py --content < content image > --mask < mask image > --model-path < model-path > --output-path < output image path >
 ```
