@@ -12,3 +12,8 @@ You can download all trained models from here [Baidu Yun](https://pan.baidu.com/
 ```shell
 python stylize_image.py --content <content image> --mask <mask image> --model-path <model-path> --output-path <output image path>
 ```
+For example:
+```shell
+python stylize_image.py --content content/dog.jpg  --mask mask/mask1.jpg  --model-path logfile_night/night.ckpt --output-path stylized_image.jpg
+```
+
