@@ -17,7 +17,13 @@ For example:
 python stylize_image.py --content content/dog.jpg  --mask mask/mask1.jpg  --model-path logfile_night/night.ckpt --output-path stylized_image.jpg
 ```
 ## Train
-The content image can be downloaded from [coco](http://msvocds.blob.core.windows.net/coco2014/train2014.zip)
-The pre-trained vgg19 modelfile can be downloaded from [VGG19](http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat)
+The content image can be downloaded from [coco](http://msvocds.blob.core.windows.net/coco2014/train2014.zip).
+The pre-trained vgg19 modelfile can be downloaded from [VGG19](http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat).
 Then you can train a new model as
+```shell
+python train_network.py --style <style_image> --train-path <the content image folder> --save-path <the save path> --vgg-path <the pretrained vgg19 model>
+```
+```shell
+python train_network.py --style style/style1.jpg --train-path train2014 --save-path logfile --vgg-path imagenet-vgg-verydeep-19.mat
+```
 
