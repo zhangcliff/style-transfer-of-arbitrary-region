@@ -8,7 +8,16 @@ This is a tensorflow implementation of a conditional style transfer network whic
 ![image](https://github.com/zhangcliff/style-transfer-of-arbitrary-region/blob/master/example/example1.png)
 
 ## Usage
-You can download all trained models from here [Baidu Yun](https://pan.baidu.com/disk/home?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0&traceid=#list/vmode=list&path=%2Farbitrary%20region%20style%20transfer%20models)
+You can download all trained models from here [Baidu Yun](https://pan.baidu.com/s/16YkBPWW_9jQj8-Qa4zedsQ)
 ```shell
 python stylize_image.py --content <content image> --mask <mask image> --model-path <model-path> --output-path <output image path>
 ```
+For example:
+```shell
+python stylize_image.py --content content/dog.jpg  --mask mask/mask1.jpg  --model-path logfile_night/night.ckpt --output-path stylized_image.jpg
+```
+## Train
+The content image can be downloaded from [coco](http://msvocds.blob.core.windows.net/coco2014/train2014.zip)
+The pre-trained vgg19 modelfile can be downloaded from [VGG19](http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat)
+Then you can train a new model as
+
